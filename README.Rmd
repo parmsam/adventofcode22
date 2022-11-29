@@ -37,3 +37,8 @@ This is a basic example which shows you how to solve a common problem:
 # library(adventofcode22)
 ## basic example code
 ```
+
+
+## Credit
+
+- TJ Mahr for [{aoc}](https://github.com/tjmahr/aoc) which this package is built using and [inspired by](https://github.com/tjmahr/adventofcode21)
