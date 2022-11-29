@@ -21,3 +21,5 @@ Imports:
 Remotes: 
     github::tjmahr/aoc
 RoxygenNote: 7.2.1
+URL: https://github.com/parmsam/adventofcode22
+BugReports: https://github.com/parmsam/adventofcode22/issues
