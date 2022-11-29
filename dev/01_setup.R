@@ -8,6 +8,7 @@ usethis::edit_r_profile(scope = "project")
 ## Create Common Files ----
 ## See ?usethis for more information
 usethis::use_gpl_license(version = 3)  # You can set another license here
+usethis::use_readme_rmd( open = FALSE )
 
 ## Use git ----
 usethis::use_git()

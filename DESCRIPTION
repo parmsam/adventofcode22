@@ -1,6 +1,6 @@
 Package: adventofcode22
 Type: Package
-Title: What the Package Does (Title Case)
+Title: My solutions for Advent of Code 2022
 Version: 0.1.0
 Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>

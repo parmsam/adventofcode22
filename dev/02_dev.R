@@ -18,7 +18,15 @@ usethis::use_pipe(export = TRUE)
 usethis::use_git_ignore(".aoccookie")
 
 # Setup each aoc day as you work ----
+# aoc::use_day(1) creates R/day01.R, tests/testthat/test-day01.R,
+# inst/input01.txt, and inst/run-day01.R
 aoc::use_day(1)
+
+# Enter each day's solutions ----
+rstudioapi::navigateToFile( "R/data-solutions.R" )
+
+# Document your progress ----
+rstudioapi::navigateToFile( "README.Rmd" )
 
 ## Setup Github ----
 usethis::use_github()
