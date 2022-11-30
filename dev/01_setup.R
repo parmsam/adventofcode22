@@ -1,6 +1,19 @@
-# Tell the aoc package which defaults to use ----
-# aoc is a usethis-style functions for Advent of Code puzzles
-# (see dev/02_dev.R for dependencies)
+# Build an aoc package to work through your solutions
+#
+# README: each step of the dev files is optional, and you don't have to
+# fill every dev script before getting started.
+# 01_start.R should be filled at start.
+# 02_dev.R should be used to keep track of your development during the project.
+#
+#
+########################################
+#### CURRENT FILE: ON START SCRIPT #####
+########################################
+
+## Set {aoc} options ---
+## Tell the aoc package which defaults to use
+## aoc is a usethis-style functions for Advent of Code puzzles
+## (see dev/02_dev.R for dependencies)
 # Edit .RProfile and add options lines
 usethis::edit_r_profile(scope = "project")
 # example: options(aoc.year = 2017, aoc.package = "awesomeadvent2017")
