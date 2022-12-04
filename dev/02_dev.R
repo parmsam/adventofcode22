@@ -18,6 +18,7 @@ usethis::use_package( "stringr" )
 usethis::use_package( "lubridate" )
 usethis::use_package( "glue" )
 usethis::use_package( "purrr" )
+usethis::use_dev_package("adventdrob", remote = "github::dgrtwo/adventdrob")
 
 # Use pipe ----
 usethis::use_pipe(export = TRUE)
@@ -29,14 +30,20 @@ usethis::use_pipe(export = TRUE)
 fs::file_create(".aoccookie")
 rstudioapi::navigateToFile(".aoccookie")
 # add string object named session to .aoccokie
-# session=[...]" where [...] is whatever the key is
+# session=[...] where [...] is whatever the key is
 # find your key using your preferred browser devtools
 usethis::use_git_ignore(".aoccookie")
+## alternatively, if you're using {adventdrob}:
+# set ADVENT_SESSION in your .Renviron to your Advent of Code cookie
+usethis::edit_r_environ()
 
 ## Setup each aoc day as you work ----
 ## aoc::use_day(1) creates R/day01.R, tests/testthat/test-day01.R,
 ## inst/input01.txt, and inst/run-day01.R
 aoc::use_day(1)
+aoc::use_day(2)
+aoc::use_day(3)
+aoc::use_day(4)
 
 # Enter each day's solutions ----
 rstudioapi::navigateToFile( "R/data-solutions.R" )
@@ -46,4 +53,3 @@ rstudioapi::navigateToFile( "README.Rmd" )
 
 # Setup Github ----
 usethis::use_github()
-
